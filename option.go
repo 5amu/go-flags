@@ -22,10 +22,14 @@ type Option struct {
 	// or LongName needs to be non-empty.
 	ShortName rune
 
+	ShortOptDelimiter rune
+
 	// The long name of the option. If not "", the option flag can be
 	// activated using --<LongName>. Either ShortName or LongName needs
 	// to be non-empty.
 	LongName string
+
+	LongOptDelimiter rune
 
 	// The default value of the option.
 	Default []string
